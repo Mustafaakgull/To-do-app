@@ -52,6 +52,7 @@ def hello_world():
     return render_template('index.html', todos=todos, todos_length=todos_length)
 '''
 @app.route('/')
+
 @app.route('/page/<int:page>')
 def hello_world(page=1):
     per_page = 3
